@@ -1,24 +1,8 @@
-# README
+# Storefront
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get set up:
+- Install postgresql
+- Clone the repo
+- rails db:setup
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app uses rails 5.2.0 and ruby 2.4.1p111
