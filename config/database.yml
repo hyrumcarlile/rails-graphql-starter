@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: storefront_development
+  database: rails_graphql_skeleton_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: storefront
+  #username: rails_graphql_skeleton
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: storefront_test
+  database: rails_graphql_skeleton_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: storefront_production
-  username: storefront
-  password: <%= ENV['STOREFRONT_DATABASE_PASSWORD'] %>
+  database: rails_graphql_skeleton_production
+  username: rails_graphql_skeleton
+  password: <%= ENV['RAILS_GRAPHQL_SKELETON_DATABASE_PASSWORD'] %>
